@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="shortcut icon" href="./src/favicon.png" type="image/x-icon">
+    <title>Divination Game</title>
+</head>
+
+<body>
+    <main>
+
+        <div id="item1" class="items">
+            <header>
+                <h1>Jogo da Adivinhação</h1>
+                <p >Adivinhe o número entre 0 a <input type="number" id="valor-vezes" value="10"></p>
+                <p id="errou"></p>
+            </header>
+
+            <form>
+                <input type="number" id="input-numero" placeholder="0">
+                <button id="botao-tentar">Tentar</button>
+            </form>
+        </div>
+
+        <div id="item2" class="items hide">
+            <h2>Acertou na 3 tentativa!</h2>
+
+            <form>
+                <button id="botao-novamente">Jogar novamente</button>
+            </form>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
