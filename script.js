@@ -8,11 +8,11 @@ const errou = document.querySelector('#errou')
 
 
 let geraValorRandom = () =>Math.round(Math.random() * qtdVezes.value)
-let valorRandom = funcaoValorRandom()
+let valorRandom = geraValorRandom()
 let contadorErro = 0
 
 qtdVezes.addEventListener('input',()=>{
-    valorRandom = funcaoValorRandom()
+    valorRandom = geraValorRandom()
 })
 
 const conferirValor = (event) => {
@@ -41,7 +41,7 @@ const voltarInicio = (event) => {
     errou.style.color = 'rgb(106, 106, 106)'
     contadorErro = 0
     qtdVezes.value = 10
-    valorRandom = funcaoValorRandom()
+    valorRandom = geraValorRandom()
 }
 
 
